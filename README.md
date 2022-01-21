@@ -1,27 +1,25 @@
 # WeatherViewer
+Este projeto é um hub onde se pode ver as temperaturas atuais de cidades onde moram as pessoas integrantes do time do StartDB - 2021/22 e ele também mostra a temperatura de qualquer cidade no mundo.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.3.
+Todos os dias nós falamos sobre como a temperatura está em nossas cidades, então resolvi criar um aplicativo que mostre a temperatura das cidades de todos os integrantes do time.
 
-## Development server
+Este projeto utiliza Angular 13.0.3.
+API: https://openweathermap.org/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Como fiz esse projeto?
+Eu comecei esse projeto procurando na [documentação da API](https://openweathermap.org/current) como ela é utilizada.
 
-## Code scaffolding
+E então segui os seguintes passos:
+1. criei o projeto angular com o comando `ng new`.
+2. modifiquei o app.component para ter a forma que eu queria inicialmente.
+3. criei o service para acessar a API.
+4. criei uma `div` com `*ngFor` para mostrar os dados buscados na API.
+5. fui atrás de fontes legais para colocar no css.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### O que aprendi com este projeto?
 
-## Build
+Eu criei este projeto com o objetivo de melhorar minhas habilidades com angular e css. Portanto achei válido acompanhar por aqui o que eu aprendi com ele.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- aprendi como acessar propriedades de objetos compostos por outros objetos.
+- aprendi a utilizar um pipe do angular para arredondar números diretamente no html.
+- aprendi a importar fontes no angular.
