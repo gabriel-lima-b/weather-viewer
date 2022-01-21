@@ -1,0 +1,18 @@
+<h1 class="titulo">Previsão do tempo DB</h1>
+
+<div class="search-div">
+  <input type="text" placeholder="Procure por uma cidade">
+  <button>Procurar</button>
+</div>
+
+<div class="card-list" *ngFor="let location of locations;">
+  <div class="card">
+    <h3>{{location.list[0].name}}</h3>
+    <p>{{location.list[0].main.temp | number: '1.0-0'}} <sup>°C</sup> </p>
+    <p>{{location.list[0].weather[0].description}}</p>
+    <figure>
+      <img class="city-icon" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/162656/{{location.list[0].weather[0].icon}}.svg" alt="{{location.list[0].weather[0].description}}">
+      <figcaption>{{location.list[0].weather[0].description}}</figcaption>
+    </figure>
+  </div>
+</div>
